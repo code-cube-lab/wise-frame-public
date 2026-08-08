@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>WISE / FRAME · Mini App</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#0b0b0d;color:#fff}
+    body{min-height:100dvh;margin:0;display:grid;place-items:center;padding:24px;text-align:center}
+    main{max-width:420px}b{display:block;font-size:18px}p{color:#aaa}a{color:#c7ff22}
+  </style>
+  <script>
+    (() => {
+      const hashParams = new URLSearchParams(location.hash.replace(/^#/, ""));
+      const queryParams = new URLSearchParams(location.search);
+      const screen = hashParams.get("screen") || queryParams.get("screen") || "home";
+      queryParams.delete("screen");
+      const target = new URL("../", location.href);
+      target.search = queryParams.toString();
+      target.hash = `/miniapp?screen=${encodeURIComponent(screen)}`;
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <main><b>Открываю WISE / FRAME Mini App…</b><p>Если переход не сработал, <a href="../#/miniapp">откройте приложение вручную</a>.</p></main>
+</body>
+</html>

@@ -16,3 +16,5 @@ python -m http.server 4205 --directory C:\Users\GIGA\Desktop\WISE_FRAME_SITES_PU
 ```
 
 Открыть `http://127.0.0.1:4205/` и `http://127.0.0.1:4205/reach/`.
+
+Совместимый адрес для старых Telegram-кнопок: `/miniapp`. Он перенаправляет на hash-маршрут `/#/miniapp` и сохраняет параметр экрана.
