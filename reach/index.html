@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="WISE / REACH — мобильный кабинет продвижения WISE / FRAME.">
+  <meta name="theme-color" content="#101012">
+  <title>WISE / REACH — кабинет продвижения</title>
+  <link rel="stylesheet" href="./styles.css?v=20260807-4">
+  <script src="./app.js?v=20260807-4" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" type="button" data-open="today"><span>W/R</span><b>WISE / REACH</b><small>growth cockpit · draft only</small></button>
+    <div class="top-status"><i></i><span>Ничего не отправляется автоматически</span></div>
+    <a class="top-cta" href="../#/miniapp" target="_blank">MINI APP ↗</a>
+  </header>
+
+  <div class="app-shell">
+    <aside aria-label="Разделы кабинета">
+      <nav id="side-nav">
+        <button class="active" type="button" data-open="today"><span>01</span>Сегодня</button>
+        <button type="button" data-open="reels"><span>02</span>Ролики</button>
+        <button type="button" data-open="leads"><span>03</span>Кому писать</button>
+        <button type="button" data-open="barter"><span>04</span>Бартер</button>
+        <button type="button" data-open="comments"><span>05</span>Комментарии</button>
+        <button type="button" data-open="plan"><span>06</span>Контент‑план</button>
+        <button type="button" data-open="strategy"><span>07</span>Стратегия</button>
+        <button type="button" data-open="money"><span>08</span>Деньги</button>
+        <button type="button" data-open="status"><span>09</span>Статус</button>
+      </nav>
+      <footer><b>Правило дня</b><p>Сначала полезное наблюдение. В личку — только после уместного сигнала.</p><a href="https://t.me/PM_path_to_dreams" target="_blank" rel="noopener noreferrer">Канал с работами ↗</a></footer>
+    </aside>
+
+    <main id="main">
+      <section class="screen active" data-screen="today">
+        <div class="screen-head"><div><p class="eyebrow">07 августа 2026 · Москва</p><h1>Сегодня</h1></div><div class="metric"><b id="today-progress">0/6</b><span>действий отмечено</span></div></div>
+        <div class="today-grid" id="today-list"></div>
+        <div class="focus-card"><div><p class="eyebrow">Главный фокус</p><h2>Не искать «кому нужны фото». Найти видимую задачу.</h2><p>Карточка получает показы, бренд запускает коллекцию, автору нужна обложка, ресторан меняет меню — только такой контекст даёт естественный первый разговор.</p></div><img src="./assets/fashion.webp" alt="Fashion‑работа WISE / FRAME"></div>
+      </section>
+
+      <section class="screen" data-screen="reels">
+        <div class="screen-head"><div><p class="eyebrow">60 готовых сценариев</p><h1>Ролики</h1></div><div class="metric"><b>2 × 30</b><span>ролика в день</span></div></div>
+        <p class="intro">Примеры используются только как механика. Метрики отмечены лишь там, где они были видны в открытом источнике.</p>
+        <div class="filter-row" id="reel-days"></div>
+        <div class="reel-grid" id="reel-grid"></div>
+      </section>
+
+      <section class="screen" data-screen="leads">
+        <div class="screen-head"><div><p class="eyebrow">Публичные деловые контакты</p><h1>Кому писать</h1></div><div class="metric"><b id="lead-count">0</b><span>проверенных карточек</span></div></div>
+        <div class="notice">Перед действием открыть исходную страницу, проверить актуальность контакта и правила площадки. Все тексты — черновики; сайт не отправляет сообщения.</div>
+        <div class="lead-filters" id="lead-filters"></div>
+        <div class="lead-list" id="lead-list"></div>
+      </section>
+
+      <section class="screen" data-screen="barter">
+        <div class="screen-head"><div><p class="eyebrow">Обмен ценностью</p><h1>Бартер</h1></div></div>
+        <div class="barter-grid" id="barter-grid"></div>
+      </section>
+
+      <section class="screen" data-screen="comments">
+        <div class="screen-head"><div><p class="eyebrow">Сначала помочь публично</p><h1>Комментарии</h1></div></div>
+        <div class="comment-builder"><div class="category-list" id="comment-categories"></div><article><p class="eyebrow" id="comment-label"></p><h2 id="comment-title"></h2><p id="comment-copy"></p><div class="actions"><button class="button acid" type="button" id="copy-comment">Копировать черновик</button><a class="button line" href="https://t.me/PM_path_to_dreams" target="_blank">Выбрать доказательство ↗</a></div></article></div>
+      </section>
+
+      <section class="screen" data-screen="plan">
+        <div class="screen-head"><div><p class="eyebrow">90 постов · 30 дней</p><h1>Контент‑план</h1></div><div class="metric"><b>3/день</b><span>польза · вопрос · оффер</span></div></div>
+        <div class="plan-days" id="plan-days"></div>
+        <div class="plan-grid" id="plan-grid"></div>
+      </section>
+
+      <section class="screen" data-screen="strategy">
+        <div class="screen-head"><div><p class="eyebrow">Путь до повторной покупки</p><h1>Стратегия</h1></div></div>
+        <ol class="funnel"><li><span>01</span><b>Короткий ролик</b><p>Одна проблема и один наблюдаемый контраст.</p></li><li><span>02</span><b>Бесплатная польза</b><p>Мини‑разбор или диагностический вопрос.</p></li><li><span>03</span><b>Бот</b><p>Меню без обязательных команд.</p></li><li><span>04</span><b>Mini App</b><p>Маршрут, каталог, профиль и покупки.</p></li><li><span>05</span><b>Первый продукт</b><p>Разбор одного кадра после Stars.</p></li><li><span>06</span><b>Основная услуга</b><p>Система из пяти ролей.</p></li><li><span>07</span><b>Эксперт</b><p>Олег получает собранный контекст.</p></li><li><span>08</span><b>Повтор</b><p>Следующий SKU или новая серия.</p></li></ol>
+      </section>
+
+      <section class="screen" data-screen="money">
+        <div class="screen-head"><div><p class="eyebrow">Модель, не обещание</p><h1>Деньги</h1></div></div>
+        <div class="money-layout"><form id="money-form"><label>Цена первого продукта, ₽<input name="entry" type="number" min="0" value="2500"></label><label>Средний чек основной услуги, ₽<input name="core" type="number" min="0" value="25000"></label><label>Диагностик в месяц<input name="free" type="number" min="0" value="80"></label><label>Доля первого продукта, %<input name="entryRate" type="number" min="0" max="100" value="12"></label><label>Доля основной услуги после первого продукта, %<input name="coreRate" type="number" min="0" max="100" value="20"></label></form><article class="money-result"><small>Расчётный сценарий</small><b id="money-total">—</b><p id="money-detail"></p><span>Не учитывает налоги, возвраты, расходы и пропускную способность. Используйте как план входных данных.</span></article></div>
+      </section>
+
+      <section class="screen" data-screen="status">
+        <div class="screen-head"><div><p class="eyebrow">Разделяем уровни проверки</p><h1>Статус</h1></div></div>
+        <div class="status-grid"><article class="done"><span>LOCAL</span><h2>Сайт и Mini App</h2><p>Собраны, тесты проходят, мобильная ширина проверена.</p></article><article class="doing"><span>CONTENT</span><h2>Канал</h2><p>90 постов и 21 визуал подготовлены. Публикация ждёт подтверждения.</p></article><article class="blocked"><span>PUBLIC HTTPS</span><h2>Хостинг</h2><p>Нужны выбранный сервер и GitHub‑аккаунт.</p></article><article class="blocked"><span>PAYMENTS</span><h2>Stars</h2><p>Код готов; цена, юридические сведения и тестовая оплата не подтверждены.</p></article><article class="blocked"><span>LIVE BOT</span><h2>Mini App URL</h2><p>Старый временный туннель умер; постоянный HTTPS не подключён.</p></article><article class="blocked"><span>SECOND ACCOUNT</span><h2>Telegram QA</h2><p>Проверка оплаты и ролей на втором аккаунте не выполнялась.</p></article></div>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

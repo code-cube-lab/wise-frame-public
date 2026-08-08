@@ -1,0 +1,19 @@
+{
+  "status": "historical_stale",
+  "measurementDate": null,
+  "ageBasis": "user_statement_more_than_two_years",
+  "permission": "user_stated_author_permission",
+  "publicRelease": false,
+  "columnLabelsVerified": false,
+  "note": "Скриншоты показывают сравнительную механику. Числовые колонки обрезаны, поэтому значения приведены только как видимая строка и не интерпретируются как актуальный CTR.",
+  "items": [
+    {"id":"H01","image":"/assets/historical-ctr/marpla_historical_01.jpg","subject":"Коричневый топ","winner":"Отмечен лучший вариант","visibleValues":["2018","65","3.22%"],"sha256":"862B37D2341BFD0467E1E004AADE964AAA9D1E644FFDA4CA9B36295812D06921"},
+    {"id":"H02","image":"/assets/historical-ctr/marpla_historical_02.jpg","subject":"Жёлтый топ","winner":"Вариант 2","visibleValues":["1000","31","3.1%"],"sha256":"93F893D02A313BF2689B0542B062E51B15FF83619B05D691BE4759A9285E2967"},
+    {"id":"H03","image":"/assets/historical-ctr/marpla_historical_03.jpg","subject":"Зелёный топ","winner":"Вариант 2","visibleValues":["1001","34","5.4%"],"sha256":"4B1DCF96AB93009874C812678F136D0EA0B8B0A40363711DDDEFE192A8F8C602"},
+    {"id":"H04","image":"/assets/historical-ctr/marpla_historical_04.jpg","subject":"Оранжевый топ","winner":"Вариант 6","visibleValues":["1008","37","3.67%"],"sha256":"57C5731B5562D1CCEA386861C9FF4A51C5889A1BCD7D577EE63FD36A5463987C"},
+    {"id":"H05","image":"/assets/historical-ctr/marpla_historical_05.jpg","subject":"Чёрный топ","winner":"Вариант 1","visibleValues":["1031","19","1.84%"],"sha256":"0CB5D608C72D442C6099B396B7D04E2AE8DCF356C309D18FC793A27368602C51"},
+    {"id":"H06","image":"/assets/historical-ctr/marpla_historical_06.jpg","subject":"Юбка","winner":"Вариант 4","visibleValues":["1006","50","4.97%"],"sha256":"98F2474A6150842B64883951C9531C1AF91C5BD9147EF807B112EFEE35AC520D"},
+    {"id":"H07","image":"/assets/historical-ctr/marpla_historical_07.jpg","subject":"Приталенный коричневый топ","winner":"Вариант 2","visibleValues":["891","42","4.71%"],"sha256":"78263C01F1938655CABAB7A0DFA4832B00CB9FA3C4401150C625BB82B899F550"},
+    {"id":"H08","image":"/assets/historical-ctr/marpla_historical_08.jpg","subject":"Приталенный чёрный топ","winner":"Вариант 1","visibleValues":["1022","43","4.21%"],"sha256":"22F9D7E9FE92F645A5AB66DC4DDD0CDE8663F217EA5D501C6D94F475CC098726"}
+  ]
+}
